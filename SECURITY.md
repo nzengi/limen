@@ -8,7 +8,7 @@ We take the security of the ZK Time-Decaying Exposure Reputation System seriousl
 
 Instead, please report security issues privately:
 
-1. **Email**: Send details to [your-email@example.com] with subject line: `[SECURITY] limen Vulnerability`
+1. **Email**: Send details to [howyaniii@gmail.com] with subject line: `[SECURITY] limen Vulnerability`
 2. **Expected Response Time**: We aim to acknowledge receipt within 48 hours
 3. **Disclosure Timeline**: We will work with you to understand and address the issue within 90 days
 
