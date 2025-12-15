@@ -1,0 +1,48 @@
+[package]
+name = "zk-algorithm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Arkworks ecosystem for R1CS constraints
+ark-ff = "0.4"
+ark-ec = "0.4"
+ark-std = "0.4"
+ark-relations = "0.4"
+ark-r1cs-std = "0.4"
+ark-crypto-primitives = "0.4"
+
+# Specific curve implementation (BN254)
+ark-bn254 = "0.4"
+
+# Serialization
+ark-serialize = "0.4"
+
+# Random number generation (for testing)
+rand = "0.8"
+
+[dev-dependencies]
+# Testing dependencies
+criterion = "0.5"
+
+[[example]]
+name = "basic_reputation_flow"
+path = "examples/basic_reputation_flow.rs"
+
+[lib]
+name = "zk_algorithm"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+inherits = "release"
+
+# Note: This is reference/pseudocode
+# For production implementation, additional dependencies needed:
+# - folding-schemes = { git = "https://github.com/privacy-scaling-explorations/folding-schemes" }
+# - Or custom Nova implementation
+# - Poseidon hash implementation from ark-crypto-primitives
