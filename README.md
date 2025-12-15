@@ -68,7 +68,7 @@ Prove `E_current ≤ T` without revealing `E_current`.
 ## Project Structure
 
 ```
-zk-algorithm/
+limen/
 ├── src/
 │   ├── lib.rs                      # Main library entry
 │   └── reputation_system/
